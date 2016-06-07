@@ -1,0 +1,220 @@
+html, head,body {
+    background-color: #f2f2f2;
+}
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.containerImg {
+    left: 11%;
+    width: 78%;
+    min-height: 100%;
+    position: relative;
+}
+
+.titleText {
+    background-color: rgb(230, 230, 230);
+    border: 0 solid rgba(120, 120, 120, 1);
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 27%;
+    left: 2%;
+    top: 10%;
+    height: 20%;
+}
+
+#service {
+    background-color: #dadada; position: absolute; border: 1px solid rgb(187, 187, 187);
+    box-shadow: 0 1px 4px rgba(132, 132, 132, 0.60);
+    border-radius: 4px; width: 32%; left: 8%; top: 14%; height: 80%;
+}
+
+#form_block_main {
+    background-color: #d6d6d6; position: absolute;     border: 1px solid rgb(195, 195, 195);
+    box-shadow: 0 1px 4px rgba(132, 132, 132, 0.60);
+    border-radius: 4px; width: 48%; left: 44%; top: 14%; height: 80%; overflow-y: auto
+}
+
+#about_us {
+    position: absolute; width: 40%; left: 50%; top: 10%; height: 80%; overflow-y: auto
+}
+
+#block_carousel_about {
+    background-color: white; position: absolute;  border: 1px solid rgb(187, 187, 187);
+    box-shadow: 0 1px 4px rgba(132, 132, 132, 0.60);
+    border-radius: 4px; width: 84%; left: 8%; top: -15%; height: 27%;
+}
+
+
+@media screen and (max-width:180em)
+{
+.color_18 {
+    color: #5ab70e;
+    margin-left: 9%;
+    border-radius: 0.6%;
+    font: 390% Impact,sans-serif;
+}
+    #h4 {
+        color: #5ab70e;
+        font: 390% Impact,sans-serif;
+    }
+    #h3 {
+        color: #5ab70e;
+        font: 200% Impact,sans-serif;
+        width: auto;
+        text-align: center;
+    }
+    #depth2 {
+        background-color: white; position: absolute; width: 100%;  top: 107%;
+        height: 280%;
+    }
+    #service_li {
+        font: 155%,sans-serif;
+    }
+    #service_p {
+        color: #5ab70e;
+        font: 200% Impact,sans-serif;
+        margin-left: 8%;
+        margin-top: 5%;
+    }
+}
+@media screen and (max-width:50em)
+{
+    .color_18 {
+        color: #5ab70e;
+        margin-left: 12%;
+        border-radius: 0.6%;
+        font: 80% Impact,sans-serif;
+    }
+    #h4 {
+        color: #5ab70e;
+        font: 80% Impact,sans-serif;
+    }
+    #h3 {
+        color: #5ab70e;
+        font: 80% Impact,sans-serif;
+        width: auto;
+        text-align: center;
+    }
+    #p {
+        font-size: 0.7em;
+        overflow-y: auto;
+    }
+    #depth2 {
+        background-color: white; position: absolute; width: 100%;  top: 107%;
+        height: 400%;
+    }
+    #service_li {
+        font-size: 80%;
+        margin-left: -91%;
+        overflow: auto;
+    }
+    #service_p {
+        color: #5ab70e;
+        font: 90% Impact,sans-serif;
+        margin-left: 8%;
+        margin-top: 5%;
+    }
+    li {
+        list-style-type: none
+    }
+}
+
+button {
+    cursor:pointer;
+}
+
+.confirm {
+    border: 0 solid rgba(239, 239, 239, 0.90);
+    border-radius: 5px;
+    background: #fafafa;
+    width:200px;
+    padding:10px;
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+
+}
+.confirm-text {
+    padding:10px;
+    background: #cfe2ff;
+    border:1px solid #ccc;
+}
+
+.mydel{
+
+    padding:10px;
+    box-shadow: 0 0 10px #eaeaea,
+    inset 0 0 30px #e1e1e1;
+}
+
+
+#contact{
+    background:darkslategray;
+    width:150px;
+    height:280px;
+}
+
+th.sortable {
+    cursor: pointer;
+}
+
+th.sortable:hover{
+    box-shadow: inset 0 0 30px #2187e7;
+    background-color: #f5f5f5;
+}
+
+.growl{
+    margin-bottom: 150px;
+}
+
+.otp {
+    margin-bottom: 100px;
+}
+.kit {
+    margin-bottom: 50px;
+}
+/*
+li {
+    list-style-type: none
+}
+*/
+#oneweek {
+    background:orange;
+}
+#twoweek {
+    background:red;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #fff; cursor: default; overflow: auto; }
+.autocomplete-suggestion { padding: 10px 5px; font-size: 1.2em; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #f0f0f0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399ff; }
+
+
+.line {
+    position:fixed;
+    z-index: 10000;
+    width: 70%;
+    height:50px;
+    left: 380px;
+    top: 37px;
+    border-radius: 5px; /*opacity: 0.8;*/
+    background-color: rgba(49, 251, 151, 0.8)
+}
+#childLine {
+    position: absolute;
+    bottom:5px;
+    left: 60px;
+}
+
+
+/*#chartdiv {
+    width		: 100%;
+    height		: 435px;
+    font-size	: 11px;
+}*/
+  td {width: 15%;}
