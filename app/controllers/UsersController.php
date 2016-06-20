@@ -39,7 +39,7 @@ class UsersController extends BaseController
             }
             if(Auth::user()->admin && Session::has('id'))
             {
-                $city=Session::has('city');
+                $city=Session::get('city_id');
             }
             $query = User::OrderBy('created_at', (Input::get('id') == 'old') ? 'asc' : 'desc')
                 ->where('city', '=', $city)
@@ -198,10 +198,11 @@ class UsersController extends BaseController
 				}
         Session::forget('id');
         Session::put('id', $id);
-        Session::put('name', $user->username);
+        Session::put('name', strtoupper($user->username));
 				
+        Session::put('city_id', $user->city);
         Session::put('city', $user->cities()->first()->engname);
-
+        
          $admin=User::where('id', '=', Auth::user()->id)->first();
          $admin->manager=true;
          $admin->city=$user->city;

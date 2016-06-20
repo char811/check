@@ -56,7 +56,7 @@ class OrdersController extends \BaseController
             }
             if(Auth::user()->admin && Session::has('id'))
             {
-                $city=Session::has('city');
+                $city=Session::get('city_id');
             }
             $query = Order::OrderBy('created_at', (Input::get('id') == 'old') ? 'asc' : 'desc')
                 ->whereHas('getcostumer', function ($k) use ($city) {
